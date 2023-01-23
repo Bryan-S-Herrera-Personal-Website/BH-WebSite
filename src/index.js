@@ -1,9 +1,9 @@
-// Imports
+// Import react components
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import Home from './components/Home';
-import About from './components/about';
+import './app.css';
+import App from './App';
+
 
 import { BrowserRouter } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ import { BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <Home />,
-    <About />
+    <App />
   </BrowserRouter>
 );
+
