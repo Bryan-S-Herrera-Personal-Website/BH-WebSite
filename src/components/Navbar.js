@@ -12,9 +12,9 @@ const Navbar = () => {
     const [click, setClick] = useState();
     const handleClick = () => setClick(!click);
 
-
   return (
     <div className='header'>
+                
         <Link to="/">
            <h1>Bryan's Website</h1>
         </Link>
@@ -42,6 +42,12 @@ const Navbar = () => {
                     Contact
                 </Link>
             </li>
+            <li>
+                <Link to="/Blog"> 
+                    Blog
+                </Link>
+            </li>
+            
 
         </ul>
         

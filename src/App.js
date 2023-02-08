@@ -7,6 +7,7 @@ import Home from "./routes/Home";
 import About from "./routes/About";
 import Project from "./routes/Project";
 import Contact from "./routes/Contact";
+import Blog from "./routes/Blog";
 
 
 // Main component
@@ -19,6 +20,7 @@ function App() {
         <Route path="/project" element={<Project />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/Blog" element={<Blog />} />
       </Routes>
     </>
   );

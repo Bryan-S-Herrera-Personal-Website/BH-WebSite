@@ -1,6 +1,7 @@
 // imports
 import React from 'react'
 import Navbar from '../components/Navbar';
+import HeroImg from '../components/HeroImg';
 
 // HOME
 
@@ -9,7 +10,7 @@ const Home = () => {
     // navbar
     <div>
       <Navbar/>
-
+      <HeroImg/>
 
     </div>
   )
