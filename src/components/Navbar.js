@@ -57,7 +57,7 @@ const Navbar = () => {
                 </Link>
             </li>
             <li>
-            <a href='https://bryanherrerae.blogspot.com/'> Blog </a> 
+            <a href='https://bryanherrerae.blogspot.com/'>Blog</a> 
             </li>
             
 
