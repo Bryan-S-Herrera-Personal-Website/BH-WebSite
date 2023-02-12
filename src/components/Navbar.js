@@ -12,8 +12,22 @@ const Navbar = () => {
     const [click, setClick] = useState();
     const handleClick = () => setClick(!click);
 
+    // THis is for change the color of the navbar when scrol
+    //l down, if scroll down, change the color, but if isn't 
+    //scrolling down, set false and don't change anything
+    const[color, setColor] = useState(false)
+    const changeColor = () => {
+        if(window.scrollY >=1) {
+            setColor(true);
+        }else{
+            setColor(false);
+        }
+    };
+    // listen if scrolling down and active the changeColor function
+    window.addEventListener("scroll", changeColor);
+
   return (
-    <div className='header'>
+    <div className={color ? "header header-bg" : "header"}> 
                 
         <Link to="/">
            <h1>Bryan's Website</h1>
