@@ -9,7 +9,7 @@ class HeroImg3 extends Component {
         <div className='heading3'>
           <h1>{this.props.heading}</h1>
           <br></br>
-          <p>I'm a student of IT Engineer</p>
+          <p>Lorem ipsum Restricted Idnt</p>
         </div>
     </div>
     );

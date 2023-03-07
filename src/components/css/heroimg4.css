@@ -1,0 +1,47 @@
+.hero-img4 {
+    width: 100%;
+    background: rgba(0, 0, 0, 0,5);
+    height: 60vh;
+    position: relative;
+}
+
+.hero-img4::before{
+    content: "";
+    background: url("");
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.heading4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-img4 h1 {
+    font-size: 2.7rem;
+}
+
+
+.hero-img4 p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* When screen is at 640px */
+@media screen and (max-width: 640px) {
+    .hero-img4 h1 {
+        font-size: 2rem;
+    }
+    
+}

@@ -11,8 +11,10 @@ const Footer = () => {
     <div className='footer'>
         <div className='footer-container'>
             <div className='left'>
-
+            <p className='getInTouch' style={{color:"#fff", marginRight: "4rem"}}><b>Get In Touch</b></p>
+            <br></br>
             <div className='location'>
+               
                     <FaHome size={20} style={{color:"#fff", marginRight: "2rem"}} />
                 <div>
                     <p>Esparza, Puntarenas,</p>
