@@ -1,53 +1,38 @@
 .project-heading{
-    text-align: center;
-    padding: 4rem 0 2rem 0;
-
+  text-align: center;
+  padding: 4rem 0 2rem 0;
+  margin-right: 4.7rem;
 }
 
 .project-container{
-    max-width: 1190px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 40;
-    padding-bottom: 5rem;
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+  padding-bottom: 4.6rem;
 }
 
 .project-card{
-    background: #1a1919;
-    padding: 1.2rem 1rem;
-    border: 2px solid #91C9FF;
-    
+  background: #1a1919;
+  padding: 1.2rem 2.5rem;
+  width: 380px;
+  height: 540px;
+  border: 2px solid #91C9FF;
 }
 
 .project-card img{
-    width: 100%;
+  width: 100%;
 }
 
 .project-title{
-    color: #91C9FF;
-    padding: 1rem 0;
-}
-
-
-/* When screen is 740px */
-@media screen and (max-width:740px) {
-    .project-container{
-        max-width: 90%;
-        margin: auto;
-
-        grid-template-columns: 1fr;
-    }
-
-    .btn2{
-        height: 60px;
-        width: 100px;
-    }
+  color: #91C9FF;
+  padding: 1rem 0;
 }
 
 /*THis is the amazing buttoms*/
 .glow-on-hover {
-  width: 180px;
+  width: 140px;
   height: 50px;
   border: none;
   outline: none;
@@ -96,11 +81,69 @@
   background: #111;
   left: 0;
   top: 0;
-  border-radius: 10px;
 }
 
 @keyframes glowing {
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
+}
+
+/* When screen is at 900px */
+@media screen and (max-width:900px) {
+  .project-container{
+      max-width: 90%;
+      margin: auto;
+      grid-template-columns: 1fr;
+  }
+  .project-card{
+    width: 650px;
+    height: 630px;
+  }
+  
+  .glow-on-hover {
+    width: 282px;
+    height: 4rem;
+  }
+
+}
+
+/* When screen is 740px */
+@media screen and (max-width:740px) {
+  .project-container{
+      max-width: 90%;
+      margin: auto;
+      grid-template-columns: 1fr;
+  }
+  .project-card{
+    width: 300px;
+    height: 595px;
+  }
+  
+  .glow-on-hover {
+    width: 100px;
+    height: 30px;
+  }
+
+}
+
+/* When screen is at 500px make this */
+@media screen and (max-width:500px) {
+  .project-container{
+      max-width: 90%;
+      margin: auto;
+      grid-template-columns: 1fr;
+  }
+
+  .project-card{
+    width: 300px;
+    height: 595px;
+  }
+  
+  .glow-on-hover {
+    width: 100px;
+    height: 30px;
+  }
+
+
 }
