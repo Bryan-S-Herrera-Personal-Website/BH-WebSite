@@ -28,6 +28,11 @@
     font-weight: 500;
 }
 
+.nav-menu li a:hover{
+    color: #4F95DA;
+
+}
+
 /*This make disapear the hamburguer icon**/
 .hamburger{
     display: none;
@@ -42,7 +47,7 @@ ul{
     padding: 12px 32px;
     font-size: 1rem;
     text-transform: uppercase;
-    background: rgb(248, 217, 14);
+    background: #4F95DA;
     color:#222;
     border: 1px solid #fff;
     font-weight: 600;
