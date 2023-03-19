@@ -9,6 +9,7 @@ const Contact = () => {
   return (
     <div>
       <Navbar/>
+      <br></br>
       <Heroimg4/>
       <Footer/>
     </div>
