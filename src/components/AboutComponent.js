@@ -1,5 +1,5 @@
 import React from 'react'
-import './css/heroimg3.css'
+import './css/About.css'
 import { Component } from 'react'
 import { Link } from 'react-router-dom';
 import MyImg1 from "../assets/MyImg1.jpg"

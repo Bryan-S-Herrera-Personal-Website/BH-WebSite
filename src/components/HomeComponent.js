@@ -1,5 +1,5 @@
 // import css 
-import './css/heroimg.css';
+import './css/Home.css';
 
 import IntroImg from '../assets/intro-bg.jpg';
 

@@ -1,4 +1,4 @@
-import './css/heroimg2.css'
+import './css/Project.css'
 import React from 'react'
 import { Component } from 'react';
 

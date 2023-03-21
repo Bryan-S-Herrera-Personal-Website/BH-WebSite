@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/footer'
-import HeroImg2 from '../components/Heroimg2'
+import HeroImg2 from '../components/ProjectComponent'
 import Work from '../components/Work'
 
 const Project = () => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
 import Footer from '../components/footer';
-import HeroImg3 from '../components/Heroimg3';
+import HeroImg3 from '../components/AboutComponent';
 
 export const About = () => {
   return (
