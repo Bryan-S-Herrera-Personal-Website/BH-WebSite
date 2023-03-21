@@ -2,7 +2,7 @@ import React from 'react'
 import './css/About.css'
 import { Component } from 'react'
 import { Link } from 'react-router-dom';
-import MyImg1 from "../assets/MyImg1.jpg"
+import MyImg1 from "../assets/person-profile-icon.png"
 
 class HeroImg3 extends Component {
     render() {
@@ -10,8 +10,12 @@ class HeroImg3 extends Component {
         <div className='about'>  
 
           <div className='main'>
+            <div className='img-container'>
             <img src={MyImg1}></img>
+            </div>
+            
             <div className='about-text'>
+              <h1>Bryan H,</h1>
               <h1>About Me</h1>
               <h5>Student of <span>IT Engineer</span></h5>
               <p>
@@ -31,8 +35,6 @@ class HeroImg3 extends Component {
               </Link>
             </div>
           </div>
-
-        
 
         </div>
     );

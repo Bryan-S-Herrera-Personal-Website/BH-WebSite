@@ -1,11 +1,13 @@
 .about {
     width: 100%;
-    padding: 78px 0px;
+    padding: 80px 0px;
 }
 
 .about img{
     height: auto;
     width: 420px;
+    border-radius: 900px;
+    background-color: #fff;
 }
 
 .about-text{
@@ -61,45 +63,145 @@ span{
     border: 3px solid #4F95DA;
     cursor: pointer;
 }
+/* When screen is at 850px */
+@media screen and (max-width:1050px) {
+    .about img{
+        width: 400px;
+    }
 
-/* When screen is at 400px */
-@media screen and (max-width:400px) {
+    .about-text{
+        padding-left: 20px;
+    }
+}
+
+/* When screen is at 950px */
+@media screen and (max-width:950px) {
+    .about img{
+        width: 400px;
+    }
+    .main{
+        padding-top: +110px;
+    }
+    .about-text{
+        padding-left: 30px;
+    }
+}
+
+/* When screen is at 850px */
+@media screen and (max-width:850px) {
+    .about img{
+        width: 300px;
+    }
+
+    .about-text{
+        padding-left: 20px;
+    }
+}
+
+/* When screen is at 550px */
+@media screen and (max-width:550px) {
     
     .about img{
-        height: 270px;
+        width: 240px;
+        border-radius: 18rem;
+    }
+
+    .img-container{
+        padding-left: 100px;
     }
     
     .about-text{
-        width: 100px;
+        width: 360px;
     }
     
     .main{
         width: 300px;
-        margin: 0 auto;
-        align-items: center;
+        margin: 70px;
+        display:block;
     }
 
     .about-text h1{
-        padding: 20px 0;
+        padding: 10px 0;
         font-size: 22px;
         text-transform: capitalize;
         margin-bottom: 20px;
+        text-align: center;
+        padding-left: 55px;
     }
     .about-text h5{
+        padding-left: 60px;
         color: white;
-        font-size: 20px;
+        font-size: 32px;
         text-transform: capitalize;
         margin-bottom: 25px;
         letter-spacing: 2px;
     }
     
     .about-text p{
+        padding-left: 60px;
         padding: 1rem 1;
-        padding-left: 16px;
         color:#fff;
         letter-spacing: 0px;
-        line-height: 15px;
-        font-size: 10px;
+        line-height: 20px;
+        font-size: 15px;
+    }
+
+    .btn2{
+        margin-left: 60px;
+    }
+    
+}
+
+/* When screen is at 500px */
+@media screen and (max-width:500px) {
+    
+    .about img{
+        width: 240px;
+        border-radius: 18rem;
+    }
+
+    .img-container{
+        padding-left: 7.7px;
+    }
+    
+    .about-text{
+        width: 200px;
+    }
+    
+    .main{
+        width: 300px;
+        margin: 70px;
+        display:block;
+    }
+
+    .about-text h1{
+        padding: 10px 0;
+        font-size: 22px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        text-align: center;
+        padding-left: 55px;
+    }
+    .about-text h5{
+        padding-left: 60px;
+        color: white;
+        font-size: 32px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+    }
+    
+    .about-text p{
+        padding-left: 60px;
+        padding: 1rem 1;
+        color:#fff;
+        letter-spacing: 0px;
+        line-height: 20px;
+        font-size: 15px;
+    }
+
+    .btn2{
+        margin-left: 60px;
     }
     
 }
