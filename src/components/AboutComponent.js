@@ -2,16 +2,23 @@ import React from 'react'
 import './css/About.css'
 import { Component } from 'react'
 import { Link } from 'react-router-dom';
-import MyImg1 from "../assets/person-profile-icon.png"
+//import MyImg1 from "../assets/person-profile-icon.png"
+import MyImg1 from "../assets/aboutme.jpg"
+import BackgroundIMG from "../assets/AboutNew.jpg"
 
 class HeroImg3 extends Component {
     render() {
       return(  
+        
         <div className='about'>  
 
+         
           <div className='main'>
+
+          <img className='backgroundAbout' src={BackgroundIMG} alt="Background" />  
+            
             <div className='img-container'>
-            <img src={MyImg1}></img>
+            <img className='about-img' src={MyImg1}></img>
             </div>
             
             <div className='about-text'>

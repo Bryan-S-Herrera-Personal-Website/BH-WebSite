@@ -9,7 +9,7 @@ const ProjectCardData = [
     {
         imgsrc: pro1,
         title:"BH Construccion Web",
-        text: "Podcast Thriving Facebook community and top- ranked, Amy inspires a grounded, tangible and self-affirming sense of Wow! I really can do this for over 100,000 online entrepreneurs .best-selling marketting courses",
+        text: "This page was builded in the 2020 when i was learning HTML5 and CSS3, So i made this website",
     },
 
      // Project 2,

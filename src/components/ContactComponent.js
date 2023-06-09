@@ -2,12 +2,16 @@ import './css/Contact.css'
 import React from 'react'
 import { Component } from 'react'
 
+
 // Contact Component
 class HeroImg4 extends Component {
     render() {
       return(
+
+
           <div class="container-contact">
               <br></br><br></br>
+              
              <h1>Connect With Me</h1>
              <p>
              Don't hesitate to reach out with the contact information below, 
@@ -54,6 +58,7 @@ class HeroImg4 extends Component {
                 </table>
               </div>
              </div>
+             
           </div>
   );
     

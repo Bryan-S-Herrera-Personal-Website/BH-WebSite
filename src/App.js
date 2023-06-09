@@ -1,5 +1,5 @@
 // React Stuff
-import React from "react";
+import React,{ useEffect, useState } from 'react'; 
 import "./index.css";
 import { Route, Routes } from "react-router-dom";
 // import routes
@@ -12,6 +12,7 @@ import Contact from "./routes/Contact";
 // Main component
 function App() {
   return (
+    
     // renderize all the components with her url
     <>
       <Routes>

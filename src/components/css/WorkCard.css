@@ -9,7 +9,7 @@
   margin: auto;
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-gap: 10px;
+  grid-gap: 0px;
   padding-bottom: 4.6rem;
 }
 
@@ -17,7 +17,7 @@
   background: #1a1919;
   padding: 1.2rem 2.5rem;
   width: 380px;
-  height: 540px;
+  height: auto;
   border: 2px solid #91C9FF;
 }
 
