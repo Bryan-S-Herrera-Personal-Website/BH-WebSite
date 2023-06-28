@@ -70,7 +70,7 @@ span{
     cursor: pointer;
 }
 /* When screen is at 850px */
-@media screen and (max-width:1050px) {
+@media screen and (max-width:1040) {
     .about img{
         width: 400px;
     }
@@ -81,10 +81,8 @@ span{
 }
 
 /* When screen is at 950px */
-@media screen and (max-width:950px) {
-    .about img{
-        width: 400px;
-    }
+@media screen and (max-width:920px) {
+    
     .main{
         padding-top: +110px;
     }
@@ -94,7 +92,7 @@ span{
 }
 
 /* When screen is at 850px */
-@media screen and (max-width:850px) {
+@media screen and (max-width:840px) {
     .about img{
         width: 300px;
     }
@@ -111,6 +109,8 @@ span{
         width: 240px;
         border-radius: 18rem;
     }
+
+   
 
     .img-container{
         padding-left: 100px;

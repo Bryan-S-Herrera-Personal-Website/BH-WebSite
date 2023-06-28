@@ -3,8 +3,8 @@ import './css/About.css'
 import { Component } from 'react'
 import { Link } from 'react-router-dom';
 //import MyImg1 from "../assets/person-profile-icon.png"
-import MyImg1 from "../assets/aboutme.jpg"
-import BackgroundIMG from "../assets/AboutNew.jpg"
+import MyImg1 from "../assets/ME.jpg"
+import BackgroundIMG from "../assets/homeImg.jpg"
 
 class HeroImg3 extends Component {
     render() {
