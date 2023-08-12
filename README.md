@@ -9,8 +9,10 @@ Here you have a few images of the proyect!
 ![image](https://github.com/Bryan-S-Herrera-Personal-Website/BH-WebSite/assets/84992800/4d2fe0f5-3b04-4714-930e-1a338cbf166f)
 ![image](https://github.com/Bryan-S-Herrera-Personal-Website/BH-WebSite/assets/84992800/22171f72-d18a-4ae5-bdbd-3afc73d32c79)
 
+# Clone the repository and use the followings commands to start the proyect on local
 
-
-## And you can start the proyect using the following command,
+## start the proyect using the following command,
 npm start
+
+
 
