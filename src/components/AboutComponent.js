@@ -8,42 +8,49 @@ import BackgroundIMG from "../assets/homeImg.jpg"
 
 class HeroImg3 extends Component {
     render() {
-      return(  
+      return(
         
-        <div className='about'>  
+        <div className='container'>
+           <img className='backgroundAbout' src={BackgroundIMG} alt="Background" /> 
+          
+        <br></br>
+        <br></br>
+        <br></br>
 
-         
-          <div className='main'>
+        <br></br>
+        <br></br>
+        <br></br>
 
-          <img className='backgroundAbout' src={BackgroundIMG} alt="Background" />  
-            
-            <div className='img-container'>
-            <img className='about-img' src={MyImg1}></img>
-            </div>
-            
-            <div className='about-text'>
-              <h1>Bryan H,</h1>
-              <h1>About Me</h1>
-              <h5>Student of <span>IT Engineer</span></h5>
-              <p>
-              The U.S. is a country of 50 states covering a vast 
-              swath of North America, with Alaska in the northwest
-              and Hawaii extending the nation's presence into the 
-              Pacific Ocean. Major Atlantic Coast cities are New 
-              York, a global finance and culture center, 
-              and capital Washington, DC. Midwestern metropolis 
-              Chicago is known for influential architecture and 
-              on the west coast, Los Angeles' Hollywood is famed 
-              for filmmaking. ― Google
-              </p>
-              <br></br>
-              <Link to="/Contact">
-                 <button className='btn2'>Contact</button>
-              </Link>
-            </div>
+
+           
+        <div className='container-about'>
+          <br></br><br></br>
+          <h1 className='title'>About <span> Me</span></h1>
+          <div className='about-content'>
+          <div className='image'>
+            <img src={MyImg1}></img>
           </div>
 
-        </div>
+          <div className='content'>
+            <h2> <span>I'm </span>Bryan Steward Herrera Est,</h2>
+            <br></br>
+            <p>
+              The U.S. is a country of 50 states covering a vast swath of North America, 
+              with Alaska in the northwest and Hawaii extending the nation's presence into 
+              the Pacific Ocean. Major Atlantic Coast cities are New York, a global finance 
+              the Pacific Ocean. Major Atlantic Coast cities are New York, a global finance 
+              the Pacific Ocean. Major Atlantic Coast cities are New York, a global finance 
+              the Pacific Ocean. Major Atlantic Coast cities are New York, a global finance 
+            </p>
+            <a href='' className='CV'>Download CV</a>
+            
+            </div>
+            
+          </div>
+          <br></br><br></br><br></br>
+          <br></br><br></br><br></br>
+          </div>
+          </div>
     );
    }
   }

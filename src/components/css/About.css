@@ -1,214 +1,102 @@
-.about {
-    width: 100%;
-    padding: 80px 0px;
-}
-
 .backgroundAbout{
     z-index:-10;
     width: 100%;
     height: 100vh;
     position: fixed;
+
 }
 
-.about-img{
-    height: auto;
-    width: 320px;
-    background-color: #fff;
+.container{
+    width: 100%;
+    margin: -10px auto;
+    
 }
 
-.about-text{
-    width: 550px;
+.container-about{
+    margin-left: 57px;
 }
 
-.main{
-    width: 1130px;
-    max-width: 95%;
-    margin: 0 auto;
+.title{
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: -45.5px;
+}
+
+.about-content{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
 }
 
-.about-text h1{
-    font-size: 80px;
-    text-transform: capitalize;
-    margin-bottom: 20px;
+.image{
+    flex: 0.5;
+    margin-right: 13px;
+    overflow: hidden;
 }
-.about-text h5{
+
+.image img{
+    width: 82%;
+    transition: 0.3 ease;
+}
+
+.image:hover img{
+    transform: scale(1.1);
+}
+.content{
+    flex: 1;
+    margin-left: 30px;
+}
+
+h2{
     color: white;
-    font-size: 25px;
-    text-transform: capitalize;
-    margin-bottom: 25px;
-    letter-spacing: 2px;
 }
 
+.content p{
+    color: #fff;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.CV{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.CV:hover{
+    background-color: #4F95DA;
+    color: #fff;
+}
 span{
     color: #4F95DA;
 }
 
-.about-text p{
-    color:#fff;
-    letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 18px;
-}
+/** Responsive Design **/
+@media screen and (max-width: 768px){
 
-.btn2{
-    background: #4F95DA;
-    color:white;
-    text-decoration: none;
-    border: 3px solid transparent;
-    font-weight: bold;
-    padding: 13px 30px;
-    border-radius: 30px;
-    transition: .3s;
-}
-
-.btn2:hover{
-    background: transparent;
-    border: 3px solid #4F95DA;
-    cursor: pointer;
-}
-/* When screen is at 850px */
-@media screen and (max-width:1040) {
-    .about img{
-        width: 400px;
+    .backgroundAbout{
+        width: 100%;
+        height: 100vh;
     }
 
-    .about-text{
-        padding-left: 20px;
+    .about-content{
+        flex-direction: column;
+        padding-right: 40px;
     }
-}
-
-/* When screen is at 950px */
-@media screen and (max-width:920px) {
-    
-    .main{
-        padding-top: +110px;
-    }
-    .about-text{
-        padding-left: 30px;
-    }
-}
-
-/* When screen is at 850px */
-@media screen and (max-width:840px) {
-    .about img{
-        width: 300px;
-    }
-
-    .about-text{
-        padding-left: 20px;
-    }
-}
-
-/* When screen is at 550px */
-@media screen and (max-width:550px) {
-    
-    .about img{
-        width: 240px;
-        border-radius: 18rem;
-    }
-
-   
-
-    .img-container{
-        padding-left: 100px;
-    }
-    
-    .about-text{
-        width: 360px;
-    }
-    
-    .main{
-        width: 300px;
-        margin: 70px;
-        display:block;
-    }
-
-    .about-text h1{
-        padding: 10px 0;
-        font-size: 22px;
-        text-transform: capitalize;
+    .image, .content{
+        margin: 0;
         margin-bottom: 20px;
-        text-align: center;
-        padding-left: 55px;
     }
-    .about-text h5{
-        padding-left: 60px;
-        color: white;
-        font-size: 32px;
-        text-transform: capitalize;
-        margin-bottom: 25px;
-        letter-spacing: 2px;
+    .title{
+        padding-right: 90px;
+        font-size: 38px;
+        margin-bottom: 30px;
     }
-    
-    .about-text p{
-        padding-left: 60px;
-        padding: 1rem 1;
-        color:#fff;
-        letter-spacing: 0px;
-        line-height: 20px;
-        font-size: 15px;
-    }
-
-    .btn2{
-        margin-left: 60px;
-    }
-    
 }
-
-/* When screen is at 500px */
-@media screen and (max-width:500px) {
-    
-    .about img{
-        width: 240px;
-        border-radius: 18rem;
-    }
-
-    .img-container{
-        padding-left: 7.7px;
-    }
-    
-    .about-text{
-        width: 200px;
-    }
-    
-    .main{
-        width: 300px;
-        margin: 70px;
-        display:block;
-    }
-
-    .about-text h1{
-        padding: 10px 0;
-        font-size: 22px;
-        text-transform: capitalize;
-        margin-bottom: 20px;
-        text-align: center;
-        padding-left: 55px;
-    }
-    .about-text h5{
-        padding-left: 60px;
-        color: white;
-        font-size: 32px;
-        text-transform: capitalize;
-        margin-bottom: 25px;
-        letter-spacing: 2px;
-    }
-    
-    .about-text p{
-        padding-left: 60px;
-        padding: 1rem 1;
-        color:#fff;
-        letter-spacing: 0px;
-        line-height: 20px;
-        font-size: 15px;
-    }
-
-    .btn2{
-        margin-left: 60px;
-    }
-    
-}
-
