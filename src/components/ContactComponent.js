@@ -29,14 +29,14 @@ class HeroImg4 extends Component {
         <div class="contact-wrapper animated bounceInUp">
             <div class="contact-form">
                 <h3>Contact Me</h3>
-                <form action="">
+                <form action="https://formsubmit.co/bryanherreraestrada2@gmail.com" method="POST">
                     <p>
                         <label>Name</label>
-                        <input type="text" name="name"></input>
+                        <input type="text" name="name" required></input>
                     </p>
                     <p>
                         <label>Email</label>
-                        <input type="email" name="email"></input>
+                        <input type="email" name="email" required></input>
                     </p>
                     <p>
                         <label>Phone Number</label>
@@ -51,9 +51,7 @@ class HeroImg4 extends Component {
                         <textarea name="message" rows="3"></textarea>
                     </p>
                     <p class="block">
-                        <button>
-                            Send
-                        </button>
+                    <button type="submit">Send</button>
                     </p>
                 </form>
             </div>
