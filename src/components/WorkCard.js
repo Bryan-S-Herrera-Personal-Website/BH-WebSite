@@ -1,4 +1,5 @@
 import './css/WorkCard.css'
+import ProjectCardData from './WorkCardData'
 
 import React from 'react'
 
@@ -18,11 +19,14 @@ const WorkCard = (props) => {
                    <hr></hr>  
                    <br></br>
 
-            <div className='pro-btns'>
-              <button class="glow-on-hover" type="button">View</button>
-              <button class="glow-on-hover" type="button">Source</button>
-      
-             </div>
+           
+             <div className='work-links'>
+              <p>
+                <span>Github Link:</span>
+                <p>{props.link}</p>
+              </p>
+              
+              </div>
     
 
             </div>

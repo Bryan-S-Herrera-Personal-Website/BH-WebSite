@@ -2,8 +2,8 @@ import React from 'react'
 import './css/About.css'
 import { Component } from 'react'
 import { Link } from 'react-router-dom';
-//import MyImg1 from "../assets/person-profile-icon.png"
-import MyImg1 from "../assets/ME.jpg"
+import MyImg1 from "../assets/person-profile-icon.png"
+// import MyImg1 from "../assets/Me3.jpg"
 import BackgroundIMG from "../assets/homeImg.jpg"
 
 class HeroImg3 extends Component {
