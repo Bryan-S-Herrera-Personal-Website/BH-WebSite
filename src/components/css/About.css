@@ -68,11 +68,13 @@ h2{
     text-decoration: none;
     font-weight: bold;
     border-radius: 10px;
+    transition: 1s ease-in-out;
 }
 
 .CV:hover{
     background-color: #4F95DA;
     color: #fff;
+    transition: 1s ease-in-out;
 }
 span{
     color: #4F95DA;
