@@ -1,0 +1,39 @@
+{% extends 'base.html' %} {% block content %}
+
+<style>
+  .back{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 1s ease-in-out;
+  }
+  .back:hover{
+    text-decoration: none;
+    background-color: #4F95DA;
+    color: #fff;
+    transition: 1s ease-in-out;
+}
+
+
+
+</style>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 card mb-4  mt-3 left  top">
+      <div class="card-body">
+        <h1>{% block title %} {{ object.title }} {% endblock title %}</h1>
+        <p class=" text-muted">{{ post.author }} | {{ post.created_on }}</p>
+        <p class="card-text ">{{ object.content | safe }}</p>
+        <a href= "{% url 'home' %}" class='back'>BACK</a>
+      </div>
+    </div>
+    {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
+  </div>
+</div>
+
+{% endblock content %}
