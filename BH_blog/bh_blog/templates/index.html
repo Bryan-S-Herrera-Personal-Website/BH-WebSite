@@ -1,51 +1,114 @@
 {% extends "base.html" %}
 {% block content %}
 <style>
+   
     body {
         font-family: "Roboto", sans-serif;
         font-size: 18px;
-        background-color: #fdfdfd;
+        background-color: #000;
     }
 
-    .head_text {
-        color: white;
+    .span{
+        background-color: #4F95DA;
     }
 
     .card {
         box-shadow: 0 16px 48px #4F95DA;
     }
+
+    .blog-cards{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .blog-card{
+        width: 225;
+        margin: 20px;
+        background-color: #ffffff;
+        box-shadow: opx 2px 4px rgba(0,0,0,0,0.2);
+        overflow: hidden;
+        color: #000;
+    }
+    img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .blog-content{
+        padding: 16px;
+    }
+    .blog-title{
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .blog-date{
+        font-size: 12px;
+        color: #000;
+        line-height: 1.5;
+    }
+    .read-more{
+        display: inline-block;
+        padding: 8px 12px;
+        background-color: #4F95DA;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 16px;
+        transition: 0.3s ease;
+    }
+    .read-more:hover{
+        background-color: #fff;
+        color: 000;
+        text-decoration: none;
+    }
+
+    .heading{
+        color: white;
+        margin: 10px;
+        padding: 120px;
+    }
+    span{
+        color: #4F95DA;
+    }
+    .Posts{
+        text-align: center;
+        color: #fff;
+    }
+
 </style>
 
 <header class="masthead">
+
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
             <div class=" col-md-8 col-md-10 mx-auto">
-                <div class="site-heading">
-                    <h3 class=" site-heading my-4 mt-3 text-white"> Welcome to my <span>blog</span> </h3>
-                    <p class="text-light">“Work hard in silence, let your success be your noise.” &nbsp
+                <div class="heading">
+                    <h3 class="header-text"> Welcome to my <span>blog</span> </h3> <br>
+                    <p class="text-light">“Work hard in silence, let your success be your noise.” &nbsp</p>
+                    <p>This is Bryan St. Herrera Estrada Blog This blog was built by Bryan St. while i was learning about Mysql Databases And learning python with django framework. i built this blog when i was 15 years old.
                     </p>
                 </div>
             </div>
         </div>
     </div>
 </header>
-<div class="container">
-    <div class="row">
-        <!-- Blog Entries Column -->
-        <div class="col-md-8 mt-3 left">
-            {% for post in post_list %}
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h2 class="card-title">{{ post.title }}</h2>
-                    <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
-                    <p class="card-text">{{post.content|slice:":200" }}</p>
-                    <a href="{% url 'post_detail' post.slug  %}" className='btn'>Read More &rarr;</a>
-                </div>
-            </div>
-            {% endfor %}
+<h3 class="Posts">Posts</h3>
+<div class="blog-cards">
+    {% for post in post_list %}
+    <div class="blog-card">
+        {% if post.image %}
+            <img src="{{ post.image.url }}" class="">
+        {% endif %}
+        <div class="blog-content">
+            <h2 class="blog-title">{{ post.title }}</h2>
+            <p class="blog-date">{{ post.author }} | {{ post.created_on}}</p>
+            <p class="blog-description">{{post.content|slice:":35" }}...</p>
+            <a href="{% url 'post_detail' post.slug  %}" class="read-more">Read More</a>
         </div>
-        {% block sidebar %} {% include 'sidebar.html' %} {% endblock sidebar %}
     </div>
+    {% endfor %}
 </div>
 {%endblock%}
