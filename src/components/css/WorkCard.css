@@ -35,6 +35,26 @@
   font-size: 1rem;
 }
 
+/** Btns **/
+.Work-Btn{
+  margin-top: 15px;
+  margin: 4px;
+  display: inline-block;
+  padding: 10px 22px;
+  background-color: #fff;
+  color: #000;
+  font-size: 17px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 1s ease-in-out;
+}
+
+.Work-Btn:hover{
+  background-color: #4F95DA;
+  color: #fff;
+  transition: 1s ease-in-out;
+}
+
 
 
 @keyframes glowing {
@@ -101,3 +121,7 @@
 
 
 }
+
+
+
+

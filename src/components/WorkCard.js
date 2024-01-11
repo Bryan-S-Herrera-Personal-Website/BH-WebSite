@@ -5,7 +5,8 @@ import React from 'react'
 
 const WorkCard = (props) => {
   return (
-    <div className='work-container'>
+    <div>
+      <div className='work-container'>
         <div className='project-container'>
           
             <div className='project-card'>
@@ -14,26 +15,28 @@ const WorkCard = (props) => {
                 <h2 className='project-title'>{props.title}</h2>
                 <div className='pro-details'>
                     <p>{props.text}</p>
-
+                    
                    <br></br>
                    <hr></hr>  
                    <br></br>
-
-           
-             <div className='work-links'>
-              <p>
-                <span>Github Link:</span>
-                <p>{props.link}</p>
-              </p>
+                <a
+                  href={props.link}
+                  target="_blank"
+                  className="Work-Btn">{props.linkText01}
+                </a>
+                <a
+                  href={props.link}
+                  target="_blank"
+                  className="Work-Btn">{props.linkText02}
+                  
+                </a>
               
-              </div>
-    
-
             </div>
-            </div>
-            
-            </div> 
-            </div>
+          </div>
+        </div> 
+      </div>
+          
+  </div>
   )
 }
 
